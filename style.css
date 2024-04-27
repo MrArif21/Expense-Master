@@ -23,7 +23,9 @@ body {
     font-family: "open Sans", sans-serif;
     color: #333;
 }
-
+.header {
+    text-align: center;
+}
 .container {
     max-width: 600px;
     margin: 20px auto;
@@ -59,6 +61,46 @@ h1,h2,h3,h4 {
     transform: scale(1.05);
 
 }
+#btn {
+    border-radius: 4px;
+    background-color: #5ca1e1;
+    border: none;
+    color: #fff;
+    text-align: center;
+    
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  #btn{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #btn:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #btn:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  #btn:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
 
 
 .button, .delete-btn {
