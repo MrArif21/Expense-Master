@@ -5,7 +5,7 @@ const list = document.getElementById("list");
 const form = document.getElementById("form");
 const text = document.getElementById("text");
 const incomeText = document.getElementById("income-text");
-const expenseText = document.getElementById("expense-text"); // Corrected variable name
+const expenseText = document.getElementById("expense-text"); 
 
 // Retrieve transactions from localStorage and parse it into an array
 const transactions = JSON.parse(localStorage.getItem("transactions")) || [];
