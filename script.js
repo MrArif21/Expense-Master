@@ -20,7 +20,7 @@ function addTransaction(e) {
         const incomeTransaction = {
             id: generateID(),
             text: 'Income',
-            amount: +incomeText.value // Corrected variable name
+            amount: +incomeText.value 
         };
 
         transactions.push(incomeTransaction); // Add the new transaction to the transactions array
@@ -32,7 +32,7 @@ function addTransaction(e) {
         const expenseTransaction = {
             id: generateID(),
             text: 'Expense',
-            amount: -expenseText.value // Corrected variable name
+            amount: -expenseText.value 
         };
 
         transactions.push(expenseTransaction); // Add the new transaction to the transactions array
